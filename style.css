@@ -1,0 +1,38 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-left: 650px;
+    margin-top: 250px;
+    animation-name: box;
+    animation-duration: 5s;
+    animation-iteration-count: 3;
+    animation-duration: 5s;
+}
+
+@keyframes box {
+   0% {
+     transform: translateX(0) translateY(0);
+     background-color: red;
+   }
+
+   25% {
+    transform: translateY(200px);
+    background-color: blue;
+   }
+
+   50% {
+    transform: translateX(200px) translateY(200px);
+    background-color: green;
+   }
+
+   75% {
+    transform: translateX(200px) translateY(0px);
+    background-color: yellow;
+   }
+
+   100% {
+    transform: translateX(0px) translateY(0px);
+    background-color: red;
+   }
+}
